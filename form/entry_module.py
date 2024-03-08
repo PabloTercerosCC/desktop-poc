@@ -2,7 +2,7 @@ import tkinter as tk
 from tkinter import ttk
 
 def create_name_entry_frame(parent_frame, label_text="Enter your name:"):
-    frame = ttk.Frame(parent_frame, padding="10")
+    frame = ttk.Frame(parent_frame, padding="1")
 
     # Create a label for the name entry
     name_label = ttk.Label(frame, text=label_text)

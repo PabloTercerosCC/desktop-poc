@@ -20,23 +20,23 @@ def create_title_label(parent, text, row):
     return label
 
 # Create a title label for the entries
-create_title_label(root, "Entries:", row=0)
+create_title_label(root, "Physics:", row=0)
 
 # Create a list to store name entry frames and corresponding entry widgets
 name_entries = []
 for i in range(1, 5):
-    name_entry_label = f"Name {i}:"
+    name_entry_label = f"Weight {i}:"
     name_entry_frame, name_entry = create_name_entry_frame(root, label_text=name_entry_label)
     name_entry_frame.grid(row=i, column=0, sticky=(tk.W, tk.E, tk.N, tk.S))
     name_entries.append((name_entry_label, name_entry))
 
 # Create radio buttons
-create_title_label(root, "Radio Buttons:", row=5)
+create_title_label(root, "Scenary:", row=5)
 radio_button_frame, option = create_radio_button_frame(root)
 radio_button_frame.grid(row=6, column=0, sticky=(tk.W, tk.E, tk.N, tk.S))
 
 # Create drop down menu
-create_title_label(root, "Drop Menu:", row=7)
+create_title_label(root, "Stress Level:", row=7)
 drop_menu_frame, percentage_var = create_drop_menu_frame(root)
 drop_menu_frame.grid(row=8, column=0, sticky=(tk.W, tk.E, tk.N, tk.S))
 

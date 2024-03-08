@@ -8,10 +8,10 @@ def create_radio_button_frame(parent_frame):
     option = tk.StringVar(value="Option1")
 
     # Radio button labels and their corresponding values
-    options = [("Option1", "Option1"),
-               ("Option2", "Option2"),
-               ("Option3", "Option3"),
-               ("Option4", "Option4")]
+    options = [("Jungle", "Jungle"),
+               ("City", "City"),
+               ("Desert", "Desert"),
+               ("Snow", "Snow")]
 
     # Create and place radio buttons
     for i, (text, value) in enumerate(options, start=1):
