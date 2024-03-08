@@ -23,9 +23,10 @@ def create_title_label(parent, text, row):
 create_title_label(root, "Physics:", row=0)
 
 # Create a list to store name entry frames and corresponding entry widgets
+physics = ["calibre", "bullet weight", "distance", "ammo"]
 name_entries = []
 for i in range(1, 5):
-    name_entry_label = f"Weight {i}:"
+    name_entry_label = f"{physics[i-1]}:"
     name_entry_frame, name_entry = create_name_entry_frame(root, label_text=name_entry_label)
     name_entry_frame.grid(row=i, column=0, sticky=(tk.W, tk.E, tk.N, tk.S))
     name_entries.append((name_entry_label, name_entry))
