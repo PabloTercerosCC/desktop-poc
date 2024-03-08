@@ -1,3 +1,4 @@
+# button_module.py
 import tkinter as tk
 from tkinter import ttk
 
@@ -8,7 +9,7 @@ def create_button_frame(parent_frame, name_entries, option, percentage_var):
     def submit_form():
         for name_label, name_entry in name_entries:
             name = name_entry.get()  # Retrieves text from each name entry
-            print(f"{name_label}:", name)
+            print(f"{name_label}", name)
 
         selected_option = option.get()  # Retrieves the selected option
         selected_percentage = percentage_var.get()  # Retrieves the selected percentage
