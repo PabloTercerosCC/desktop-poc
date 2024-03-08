@@ -14,7 +14,8 @@ style = ttk.Style()
 style.theme_use('clam')
 
 # Create frames for each module
-name_entry_frame, name_entry = create_name_entry_frame(root)
+name = "entry"
+name_entry_frame, name_entry = create_name_entry_frame(root, label_text=name)
 radio_button_frame, option = create_radio_button_frame(root)
 drop_menu_frame, percentage_var = create_drop_menu_frame(root)
 button_frame = create_button_frame(root, name_entry, option, percentage_var)
