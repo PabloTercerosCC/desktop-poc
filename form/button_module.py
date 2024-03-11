@@ -14,6 +14,8 @@ def create_button_frame(parent_frame, name_entries, option, percentage_var):
         print("Selected Option:", selected_option)
         print("Selected Percentage:", selected_percentage)
 
+        parent_frame.destroy()
+
     submit_button = ttk.Button(frame, text="OK", command=submit_form)
     submit_button.grid(row=0, column=0, columnspan=2, pady=5)
 
